@@ -1,4 +1,7 @@
+use colour::Colour;
+
 mod config;
+mod colour;
 
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -8,5 +11,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         Ok(cfg) => println!("{:?}", cfg),
         Err(e) => eprintln!("{}", e),
     }
+
+    println!("{}", colour::colour_string("hello there".to_string(), colour::Colour::new(0, 255, 255)));
+
     Ok(())
 }
