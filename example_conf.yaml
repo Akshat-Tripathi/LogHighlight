@@ -1,17 +1,17 @@
 ---
-  name: log-level
-    identifiers:
+logs:
+  log-level:
+    identifiers: # The regexes you want to match on
       - INFO
       - WARN
       - DEBUG
       - ERROR
-    colours:
+    colours: # The colours of each regex
       - 00FFFF
       - FFFF00
       - 0000FF
       - FF0000
-
-  name: text
+  text:
     identifiers:
       - :.*
     colours:
